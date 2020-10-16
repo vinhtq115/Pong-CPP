@@ -122,7 +122,7 @@ void moveSquare() {
     }
 
     if (down) {
-        if (s1.y == r2.y && ((s1.x + s2.x) / 2) < r2.x && ((s1.x + s2.x) / 2) > r1.x) {
+        if (s1.y == r2.y && ((s1.x + s2.x) / 2) < r2.x + 20 && ((s1.x + s2.x) / 2) > r1.x - 20) {
             player_score++;
             down = false;
         } else {
